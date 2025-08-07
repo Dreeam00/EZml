@@ -22,7 +22,7 @@
 
     (p [class="text-xl mb-2 opacity-90"]{"サイトを楽しく早く構築するための新しい方法です。"})
 
-    (a [href="#start" class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition" id="clipB"]{"クリックしてURLを入手"})
+    (a [href="use.html" class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition" id="clipB"]{"クリックしてURLを入手"})
 
   >})
 
@@ -43,22 +43,6 @@
 
   </script>
   <script src="https://dreeam00.github.io/EZml/main.js"></script>
-<script>
-
-  document.getElementById("clipB").addEventListener("click", () => {
-    const text = "https://dreeam00.github.io/EZml/main.js";
-
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        console.log("コピー成功！");
-        // ここにUIフィードバックなどを追加してもOK
-      })
-      .catch(err => {
-        console.error("コピー失敗:", err);
-      });
-  });
-
-</script>
 </body>
 </html>
 
