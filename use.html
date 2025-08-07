@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>EZml Playground</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100 font-sans overflow-x-hidden">
+
+  <script type="text/EZml">
+(header [class="bg-gray-800 text-white p-4 flex items-center justify-between overflow-hidden"] {<
+  (h1 [class="text-4xl font-bold"]{"EZml"})
+
+>})
+
+(main [class="p-4 relative left-20"] {<
+  (section [class="mb-8"] {
+    (h3 [class="text-2xl font-semibold mb-4"]{"使うには"})
+    (p [class="mb-4"]{"まずEZhtmlを使うには、以下のコードをコピーして、HTMLファイルに貼り付けてください。"})
+    (pre [class="bg-gray-200 p-4 rounded text-gray-600"] {"&lt;script src='https://dreeam00.github.io/EZml/main.js'&gt;&lt;/script&gt;"})
+    (p [class="mb-4"]{"続けてコードを書くために以下のようにします"})
+    (pre [class="bg-gray-200 p-4 rounded text-gray-600"] {"&lt;script type='text/EZml'&gt;","　　...","&lt;/script&gt;"})
+    (p [class="mb-4"]{"これの...にコードを入れます"})
+ })
+  (section [class="mb-8"]{
+  
+    (h2 [class="text-2xl font-bold text-gray-800"]{"EZmlの構文について"})
+  
+    (p [class="text-lg text-gray-700"]{"EZmlは、構文を関数のように記述するマークアップ言語です。","HTMLのようなタグではなく、括弧と属性・内容を組み合わせて構造を表現します。","構文は以下のような形で書かれます："})
+  
+    (pre [class="bg-gray-100 p-4 rounded text-sm text-gray-800"]{"&#40;tag &#91;属性&#93; &#123;&#60; 内容 &#62;&#125;&#41;"})
+  
+    (h3 [class="text-xl font-semibold text-gray-800"]{"基本構文の要素"})
+      (p [class="text-gray-600"]{"タグ名：HTMLのタグに相当する要素名","[属性]：Tailwind CSSなどのスタイルや識別子を指定","&#123;&#60; 内容 &#62;&#125;：ネストされた構文やテキストを含む","&#123; 内容 &#125;：単純なテキストやリストを含む場合","(*n)：繰り返し演算子で、構文をn回展開できる"})
+    
+    (h3 [class="text-xl font-semibold text-gray-800"]{"例：見出しと段落"})
+    
+    (pre [class="bg-gray-100 p-4 rounded text-sm text-gray-800"]{
+      &#40;section &#91;class=&#39;p-6&#39;&#93;&#123;&#60;  
+        &#40;h2 &#91;class=&#39;text-xl&#39;&#93;&#123;&#39;タイトル&#39;&#125;&#41;
+        &#40;p &#123;&#39;これは説明文です。&#39;&#125;&#41;  
+&#125;&#41;
+
+    })
+  
+    (p [class="text-lg text-gray-700"]{"このように、EZmlでは構文を詩的に、構造的に、そして再帰的に記述できます。","構文そのものが意味を持ち、記憶や感情を展開する器となります。"})
+  >})
+ })
+
+
+  </script>
+  <script src="https://dreeam00.github.io/EZml/main.js"></script>
+
+</body>
+</html>
+
